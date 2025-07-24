@@ -1,0 +1,43 @@
+<div class="app-container">
+  <header class="app-header">
+    <div class="header-content">
+      <h1 class="app-title">🐟 CS Peixes</h1>
+      <p class="app-subtitle">Sistema de Gerenciamento de Campeonato de Pescaria</p>
+    </div>
+  </header>
+
+  <nav class="app-nav">
+    <div class="nav-content">
+      <a routerLink="/dashboard" routerLinkActive="active" class="nav-link">
+        📊 Dashboard
+      </a>
+      <a routerLink="/teams" routerLinkActive="active" class="nav-link">
+        👥 Equipes
+      </a>
+      <a routerLink="/buoys" routerLinkActive="active" class="nav-link">
+        🎯 Boias
+      </a>
+      <a routerLink="/inspectors" routerLinkActive="active" class="nav-link">
+        👮 Fiscais
+      </a>
+      <a routerLink="/fish" routerLinkActive="active" class="nav-link">
+        🐠 Peixes
+      </a>
+      <a routerLink="/launches" routerLinkActive="active" class="nav-link">
+        🚀 Lançamentos
+      </a>
+      <a routerLink="/reports" routerLinkActive="active" class="nav-link">
+        📈 Relatórios
+      </a>
+    </div>
+  </nav>
+
+  <main class="app-main">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="app-footer">
+    <p>&copy; 2025 CS Peixes - Sistema de Campeonato de Pescaria</p>
+  </footer>
+</div>
+

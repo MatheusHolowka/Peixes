@@ -1,0 +1,62 @@
+<div class="dashboard-container">
+  <h2>Dashboard - CS Peixes</h2>
+  
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-icon">👥</div>
+      <div class="stat-content">
+        <h3>Equipes Cadastradas</h3>
+        <p class="stat-number">{{ totalTeams }}</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">🎯</div>
+      <div class="stat-content">
+        <h3>Boias Ativas</h3>
+        <p class="stat-number">{{ activeBuoys }}</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">🐠</div>
+      <div class="stat-content">
+        <h3>Peixes Capturados</h3>
+        <p class="stat-number">{{ totalCatches }}</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">👮</div>
+      <div class="stat-content">
+        <h3>Fiscais Ativos</h3>
+        <p class="stat-number">{{ totalInspectors }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-actions">
+    <h3>Ações Rápidas</h3>
+    <div class="action-buttons">
+      <button class="action-btn" routerLink="/teams">
+        👥 Gerenciar Equipes
+      </button>
+      <button class="action-btn" routerLink="/fish">
+        🐠 Registrar Captura
+      </button>
+      <button class="action-btn" routerLink="/launches">
+        🚀 Lançar Boia
+      </button>
+      <button class="action-btn" routerLink="/reports">
+        📈 Ver Relatórios
+      </button>
+    </div>
+  </div>
+
+  <div class="recent-activity">
+    <h3>Atividade Recente</h3>
+    <div class="activity-list">
+      <p class="no-activity">Carregando atividades...</p>
+    </div>
+  </div>
+</div>
